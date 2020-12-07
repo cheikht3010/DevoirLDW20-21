@@ -1,0 +1,54 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vs: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix o: <http://omeka.org/s/vocabs/o#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix lecteur: <https://github.com/melanieCorr/Trombino-Groupe4/edit/main/bdd/voc.ttl> .
+@prefix appreciation: <https://github.com/melanieCorr/Trombino-Groupe4/edit/main/bdd/voc.ttl> .
+
+<https://github.com/melanieCorr/Trombino-Groupe4/edit/main/bdd/voc.ttl> a owl:Ontology ;
+    dcterms:title "Trombinoscope des Youtubeurs(euse) Français(es)" .
+
+
+lecteur:Lecteur a rdfs:Class ;
+    rdfs:label "Lecteur" ;
+    rdfs:domain o:Resource ;
+    owl:sameAs foaf:Person ;    
+    vs:term_status "experimental" .
+
+lecteur:pseudo a rdf:Property ;
+    rdfs:label "pseudo" ;
+    rdfs:comment "Pseudonyme du lecteur de l'article" ;
+    rdfs:domain o:Resource ;
+    rdfs:isDefinedBy lecteur: . 
+
+appreciation:Appreciation a rdfs:Class ;
+    rdfs:label "Appreciation" ;
+    rdfs:domain o:Resource ;   
+    vs:term_status "experimental" .
+
+appreciation:commentaire a rdf:Property ;
+    rdfs:label "commentaire" ;
+    rdfs:comment "Le commentaire laisse par le lecteur pour cette new" ;
+    rdfs:domain o:Resource ;
+    rdfs:isDefinedBy appreciation: .
+
+appreciation:note a rdf:Property ;
+    rdfs:label "note" ;
+    rdfs:comment "La note laisse par le lecteur pour cette new" ;
+    rdfs:domain o:Resource ;
+    rdfs:isDefinedBy appreciation:
+
+appreciation:hasNew a rdf:Property ;
+    rdfs:label "hasNew" ;
+    rdfs:comment "La new concernée par l'appréciation" ;
+    rdfs:domain o:Resource ;
+    rdfs:isDefinedBy appreciation:
+
+appreciation:hasLecteur a rdf:Property ;
+    rdfs:label "hasLecteur" ;
+    rdfs:comment "L'auteur du commentaire et ou de la note" ;
+    rdfs:domain o:Resource ;
+    rdfs:isDefinedBy appreciation:
