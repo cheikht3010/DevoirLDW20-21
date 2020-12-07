@@ -1,0 +1,49 @@
+{
+    "o:label": "evaluation",
+    "o:resource_template_property": [
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/github.com\/melanieCorr\/Trombino-Groupe4\/edit\/main\/bdd\/voc.ttl",
+            "vocabulary_label": "vocabulaire devoir",
+            "local_name": "voc.ttlnote",
+            "label": "note"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/github.com\/melanieCorr\/Trombino-Groupe4\/edit\/main\/bdd\/voc.ttl",
+            "vocabulary_label": "vocabulaire devoir",
+            "local_name": "voc.ttlcommentaire",
+            "label": "commentaire"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/github.com\/melanieCorr\/Trombino-Groupe4\/edit\/main\/bdd\/voc.ttl",
+            "vocabulary_label": "vocabulaire devoir",
+            "local_name": "voc.ttlhasLecteur",
+            "label": "hasLecteur"
+        },
+        {
+            "o:alternate_label": null,
+            "o:alternate_comment": null,
+            "o:is_required": false,
+            "o:is_private": false,
+            "data_types": [],
+            "vocabulary_namespace_uri": "https:\/\/github.com\/melanieCorr\/Trombino-Groupe4\/edit\/main\/bdd\/voc.ttl",
+            "vocabulary_label": "vocabulaire devoir",
+            "local_name": "voc.ttlhasNew",
+            "label": "hasNew"
+        }
+    ]
+}

@@ -9,7 +9,7 @@
 @prefix appreciation: <https://github.com/melanieCorr/Trombino-Groupe4/edit/main/bdd/voc.ttl> .
 
 <https://github.com/melanieCorr/Trombino-Groupe4/edit/main/bdd/voc.ttl> a owl:Ontology ;
-    dcterms:title "Trombinoscope des Youtubeurs(euse) Français(es)" .
+    dcterms:title "vocabulaire devoir" .
 
 
 lecteur:Lecteur a rdfs:Class ;
@@ -39,16 +39,16 @@ appreciation:note a rdf:Property ;
     rdfs:label "note" ;
     rdfs:comment "La note laisse par le lecteur pour cette new" ;
     rdfs:domain o:Resource ;
-    rdfs:isDefinedBy appreciation:
+    rdfs:isDefinedBy appreciation: .
 
 appreciation:hasNew a rdf:Property ;
     rdfs:label "hasNew" ;
     rdfs:comment "La new concernée par l'appréciation" ;
     rdfs:domain o:Resource ;
-    rdfs:isDefinedBy appreciation:
+    rdfs:isDefinedBy appreciation: .
 
 appreciation:hasLecteur a rdf:Property ;
     rdfs:label "hasLecteur" ;
     rdfs:comment "L'auteur du commentaire et ou de la note" ;
     rdfs:domain o:Resource ;
-    rdfs:isDefinedBy appreciation:
+    rdfs:isDefinedBy appreciation: .
